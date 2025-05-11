@@ -61,7 +61,7 @@ SOURCES_proxy=proxy.c ot_vector.c ot_mutex.c
 
 ifneq (, $(findstring WANT_I2P, $(FEATURES)))
 	HEADERS += base64.h sha256.h
-	SOUIRCES += sha256.c
+	SOUIRCES += base64.c sha256.c
 endif
 
 OBJECTS = $(SOURCES:%.c=%.o)
